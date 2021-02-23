@@ -29,7 +29,7 @@
   $current_path =   $ground_zero_path === 'root' ? '' : $ground_zero_path . "/" ;
   $extension = ".js";
   $count = 0;
-    
+
 
   // main copycat function
   function _cat( $file, $path, $dir, $count, $file_list, $list_length ) {
@@ -89,7 +89,7 @@
     $response[ ] = (object) [ "data" => [
       "name" => $file, 
       "path" => $path, 
-      "code" => $code,
+      "rawComponent" => $code,
       "queue" => $count,
       "ext" => $extension ]
     ];
